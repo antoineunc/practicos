@@ -11,7 +11,7 @@ console.log("")
 // 2) Escribir un programa que pregunte al usuario su edad y muestre por pantalla todos los años que ha cumplido (desde 1 hasta su edad).
 console.log("Ejercicio 2:")
 const edad = readlineSync.question("Ingrese su edad: ")
-for (i = 0; i < edad;) {
+for (let i = 1; i < edad;) {
     console.log("Edad # ", ++i)
 }
 console.log("")
@@ -36,3 +36,14 @@ for (let i = 1; i <= num2; i++) {
   console.log("*".repeat(i));
 }
 console.log("")
+
+//Escribir un programa que pida al usuario una palabra y luego muestre por pantalla una a una las letras de la palabra introducida empezando por la última.
+console.log("Ejercicio 5:")
+let palabra2 = readlineSync.question("Introduce una palabra:");
+let longitud = palabra2.length;
+let i = longitud - 1;
+
+while (i >= 0) {
+  console.log(palabra2.charAt(i));
+  i--;
+}
