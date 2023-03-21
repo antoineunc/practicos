@@ -32,7 +32,7 @@ console.log("")
 console.log("Ejercicio 4:")
 const num2 = readlineSync.question("Por favor, ingrese un número entero:")
 
-for (let i = 1; i <= num2; i++) 
+for (let i = 1; i <= num2; i++) {
   console.log("*".repeat(i));
 }
 console.log("")
